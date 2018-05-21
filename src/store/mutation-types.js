@@ -1,0 +1,3 @@
+export const GET_TESTDATA = 'GET_TESTDATA'
+export const FETCH_LOADING = 'FETCH_LOADING'
+export const SET_USERINFO = 'SET_USERINFO'

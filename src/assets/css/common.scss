@@ -1,0 +1,38 @@
+$default-font-size: 16px !default;
+$main-color:#ff8800;
+html{
+  font-size: $default-font-size;
+}
+body{
+  margin:0;
+  // background: #f5f5f5 !important;
+}
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, img {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+ul{
+  >li{
+    list-style: none;
+  }
+}
+i,em{
+  font-style: normal;
+}
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+@function toRem($px){
+  // @return ($px*414/750/$default-font-size)*1rem;
+  @return ($px/3/$default-font-size)*1rem;
+  @return ($px/$default-font-size)*1rem;
+}
+.navbar {
+  display: none;
+}
+// .page{
+//   background:#f5f5f5; 
+// }
